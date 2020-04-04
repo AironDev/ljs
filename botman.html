@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf">
+        <title>Javascript Basics</title>  
+
+        <!-- CSS Framework/Misc -->
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate/animate.min.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+    
+        <!-- Font Icons -->
+        <link rel="stylesheet" href="assets/font-icons/font-awesome/css/font-awesome.css">
+    
+        <!-- Head Scripts -->
+        <script type="text/javascript" src='assets/jquery/jquery.min.js'></script>
+        <script src='assets/bootstrap/bootstrap.min.js'></script>
+    </head>
+        
+    <body >
+        <div class="container" id="app">
+            <section class="content">
+                <div class="jumbotron">
+                        <h3>Botman <span style="float:right; background: white; padding:5px; font-size:12px" class="text-danger">online</span></h3>
+                        <div class="metro white">
+                        <div class="chatarea" id="chatarea">
+                                <!-- Messages will be injected here -->
+                                <div class="clearfix"></div>
+                        </div>
+                        <div class="">
+                            <textarea name="" id="msg" cols="50" rows="1" class="typemsg"></textarea>
+                            <button class="btn btn-primary" onclick="userReply()" >Send</button>
+                            <hr/>
+                            <p id="result" class="ops"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Body scripts -->
+        <script src='basics/botman.js'></script>
+    </body>

@@ -3,7 +3,14 @@ body{
 }
 
 .container{
-	max-width: 600px;
+	max-width: 700px;
+}
+
+@media screen and (min-width: 768px){
+    .container .jumbotron {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
 
 .blue_border{
@@ -20,6 +27,10 @@ body{
 	min-height: 80px;
 	min-width:80px;
 	border: thin solid whitesmoke;
+}
+
+.metro p {
+    font-size:12px;
 }
 
 .metro .logo {
@@ -124,4 +135,66 @@ body{
 .calcpad {
     border: thin solid #80808061;
     margin: 15px;
+}
+
+
+/* Controls h3 used for title */
+h3, .h3 {
+    font-size: 24px;
+    background: #428bca91;
+    margin-bottom: 0;
+    padding: 7px 20px;
+    font-family: cursive;
+    color: white;
+}
+
+
+/* BotMan Css */
+.botmsg {
+    background: #eeeaea3d;
+    min-height: 10px;
+    padding: 5px 40px;
+    border-radius: 20px 50px 0px 0px;
+    margin: 10px 50px;
+}
+
+ .mymsg{
+    background: #eeeaea3d;
+    min-height: 10px;
+    padding: 5px 40px;
+    border-radius: 0px 0px 20px 50px;
+    text-align: right;
+    margin: 10px 50px;
+}
+
+.botmsg::after{
+    content: " ";
+}
+
+.chatarea{
+    background: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+textarea.typemsg {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    font-size: 12px;
+    padding: 10px 30px;
+    margin-left: 20px;
+    color: gray;
+}
+
+ ul.skills, ol.skills{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-left: 50px;
+    list-style: disclosure-closed;
+    background: 
+    #fbfafa;
+    margin-right: 50px;
 }

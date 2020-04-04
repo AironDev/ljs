@@ -2,23 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="utf">
-        <meta>
         <title>Javascript Basics</title>  
 
         <!-- CSS Framework/Misc -->
-        <link rel="stylesheet" href="/ljs/assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="/ljs/assets/css/animate/animate.min.css">
-        <link rel="stylesheet" href="/ljs/assets/css/custom.css">
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate/animate.min.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
     
         <!-- Font Icons -->
-        <link rel="stylesheet" href="/ljs/assets/font-icons/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/font-icons/font-awesome/css/font-awesome.css">
     
         <!-- Head Scripts -->
-        <script type="text/javascript" src='/ljs/assets/jquery/jquery.min.js'></script>
-        <script src='/ljs/assets/bootstrap/bootstrap.min.js'></script>
+        <script type="text/javascript" src='assets/jquery/jquery.min.js'></script>
+        <script src='assets/bootstrap/bootstrap.min.js'></script>
     </head>
         
-    <body style="">
+    <body >
         <div class="container" id="app">
             <section class="content">
                 <div class="jumbotron">
@@ -34,7 +33,6 @@
                     <h3>DOM</h3>
                     <pre>Javascript treats your browser or webview interface as an object, with inbuilt methods to enable you access and manipulate almost anything or any element</pre>
                     <pre>eg: document.getElementById('variables').innerHTML('oops')</pre>
-
                     <hr>
                     <h3>Prompt/Alerts</h3>
                     <div class="metro white">
@@ -48,7 +46,7 @@
                         <div class="nav"></div>
                     </div>
                     <hr>
-                    <h3>JS Calc <span style="font-size:13px; font-family:cursive;">_Airon</span></h3>
+                    <h3>incrementDecrement <span style="font-size:13px; font-family:cursive;">lolz</span></h3>
                     <div class="metro white">
                         <div class="row">
                             <div class="col-md-4 btn link pull-left" id="decrement" onclick="incrementDecrement('decrement')">Decrement</div>
@@ -56,25 +54,15 @@
                             <div class="col-md-4 btn link pull-right" id="increment" onclick="incrementDecrement('increment')">Increment</div>
                         </div>
                     </div>
+
+                    <h3>Chalenge 1: AgeInDays - <span style="font-size:13px; font-family:cursive;">Your Age in Days</span></h3>
                     <div class="metro white">
                         <div class="row">
-                            <div class="col-md-12"><textarea name="screen" id="screen" cols="35" rows="2" style="width: 100%; font-size: 18px; color:grey; padding: 10px;"></textarea></div>
-                            <div class="col-md-2 btn calcpad" id="1" onclick="calc(1)" >1</div>
-                            <div class="col-md-2 btn calcpad" id="2" onclick="calc(2)">2</div>
-                            <div class="col-md-2 btn calcpad" id="3" onclick="calc(3)">3</div>
-                            <div class="col-md-2 btn calcpad" id="4" onclick="calc(4)">4</div>
-                            <div class="col-md-2 btn calcpad" id="5" onclick="calc(5)">5</div>
-                            <div class="col-md-2 btn calcpad" id="6" onclick="calc(6)">6</div>
-                            <div class="col-md-2 btn calcpad" id="7"onclick="calc(7)">7</div>
-                            <div class="col-md-2 btn calcpad" id="8" onclick="calc(8)">8</div>
-                            <div class="col-md-2 btn calcpad" id="9"onclick="calc(9)">9</div>
-                            <div class="col-md-2 btn calcpad" id="0"onclick="calc(0)">0</div>
-                            <div class="col-md-2 btn calcpad" id="add"onclick="calc('add')">Add</div>
-                            <div class="col-md-2 btn calcpad" id="sub"onclick="calc('sub')">Sub</div>
-                            <div class="col-md-2 btn calcpad" id="div" onclick="calc('div')">Div</div>
-                            <div class="col-md-2 btn calcpad" id="mul" onclick="calc('mul')">Mul</div>
-                            <div class="col-md-2 btn calcpad" id="ans" onclick="calc('ans')">Ans</div>
-                            <div class="col-md-2 btn calcpad" id="clear" onclick="calc('clear')">Clear</div>
+                            <div class="col-md-6"><input type="text" id="age" style="width: 100%; font-size: 15px; color:grey; text-align: center;" value="Enter your year of birth"></div>
+                            <div class="col-md-4 btn btn-default link" style="margin-top: 9px;" onclick="checkAgeIndays()">Check</div>
+                        </div>
+                        <div class="row calck">
+                            <div class="col-md-12 pad"><p class="text-success" id="ageindaysresult" style="margin-top:9px"></p></div>
                         </div>
                     </div>
                 </div>
@@ -84,5 +72,5 @@
             </section>
         </div>
         <!-- Body scripts -->
-        <script src='/ljs/basics/basics.js'></script>
+        <script src='basics/basics.js'></script>
     </body>
